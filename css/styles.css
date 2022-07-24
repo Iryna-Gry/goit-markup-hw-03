@@ -30,7 +30,8 @@ button {
   line-height: 1.62;
 }
 ul,
-li {
+li,
+h2 {
   padding: 0;
   margin: 0;
 }
@@ -43,12 +44,17 @@ li {
   text-decoration: none;
 }
 /* -------------------------Section template ------------------------*/
+.section {
+  justify-content: space-evenly;
+  align-items: center; 
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 50px;
 }
 /* -------------------------Visually hidden template ------------------------*/
 .vis-hidden {
@@ -64,7 +70,18 @@ li {
   margin: -1px;
 }
 /* -------------------------Header ------------------------*/
-
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  height: 80px;
+}
+/* ----------------------Nav----------------------------- */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 /* -------------------------Logo-------------------------*/
 .logo {
@@ -74,6 +91,7 @@ li {
   line-height: 1.19;
   text-decoration: none;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 44px;
 }
 .logo-color-1 {
   color: var(--accent-color);
@@ -86,9 +104,10 @@ li {
 }
 /* -------------------------Site-nav ------------------------*/
 .site-nav li {
-  margin-top: 32px;
-  margin-right: 50px;
-  margin-bottom: 32px;
+  display: inline-block;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin-left: 50px;
 }
 .site-nav .link {
   font-weight: 500;
@@ -102,8 +121,13 @@ li {
   color: var(--accent-color);
 }
 /* -------------------------Contacts------------------------*/
+.contacts {
+  display: flex;
+  align-items: center;
+}
 .contacts li {
-  
+  margin-right: 50px;
+    justify-content: space-evenly;
 }
 
 .contacts .link {
@@ -116,11 +140,19 @@ li {
 .contacts .link:focus {
   color: var(--accent-color);
 }
-
+/* ------------------Main--------------------- */
+main {
+justify-content: center;
+}
 
 /* -------------------------Hero ------------------------*/
 .hero {
   background-color: var(--dark-bg-color);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .hero-title {
   font-weight: 900;
@@ -130,6 +162,8 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--tertiary-text-color);
+  margin-top: 0;
+  width: 696px;
 }
 .hero-button {
   font-weight: 700;
@@ -137,10 +171,15 @@ li {
   line-height: 1.88;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
+  border: transparent;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -149,6 +188,16 @@ li {
   border-radius: 4px;
 }
 /* -------------------------Features ------------------------*/
+.features {
+  display: flex;
+  justify-content: space-evenly;
+ width: 1170px;
+height: 101px;
+margin:94px auto;
+}
+.features li {
+  width: 270px;
+}
 .features .title {
   font-weight: 700;
   font-size: 14px;
@@ -158,6 +207,24 @@ li {
 }
 .features .text {
   line-height: 1.71;
+}
+/* --------------------- Ocupation----------------*/
+.ocupation.section {
+  height: 386px;
+  margin: auto;
+  margin-bottom: 94px;
+  justify-content: center;
+  align-items: center;
+}
+.ocupation.list {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+}
+.ocupation li {
+  display: inline-block;
+  justify-content: space-evenly;
 }
 /* -------------------------Team ------------------------*/
 .team.section {
