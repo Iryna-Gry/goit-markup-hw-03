@@ -31,7 +31,9 @@ button {
 }
 ul,
 li,
-h2 {
+h2, 
+h3,
+p {
   padding: 0;
   margin: 0;
 }
@@ -190,13 +192,14 @@ justify-content: center;
 /* -------------------------Features ------------------------*/
 .features {
   display: flex;
-  justify-content: space-evenly;
- width: 1170px;
+  justify-content: center;
 height: 101px;
 margin:94px auto;
+  column-gap: 30px;
 }
 .features li {
-  width: 270px;
+max-width: 270px;
+flex-basis: calc((100%-90px)/4);
 }
 .features .title {
   font-weight: 700;
@@ -204,6 +207,7 @@ margin:94px auto;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 .features .text {
   line-height: 1.71;
@@ -218,13 +222,9 @@ margin:94px auto;
 }
 .ocupation.list {
   display: flex;
-  justify-content: space-between;
-  width: 1170px;
+  justify-content: center;
   margin: auto;
-}
-.ocupation li {
-  display: inline-block;
-  justify-content: space-evenly;
+  column-gap: 30px;
 }
 /* -------------------------Team ------------------------*/
 .team.section {
