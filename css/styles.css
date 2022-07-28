@@ -52,7 +52,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid #188ce8; */
+  outline: 2px solid #188ce8;
 }
 .section-title {
   font-weight: 700;
@@ -141,8 +141,6 @@ p {
 .hero {
   background-color: var(--dark-bg-color);
   text-align: center;
-}
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -178,7 +176,7 @@ p {
   border-radius: 4px;
 }
 /* -------------------------Features ------------------------*/
-.container.features {
+.section.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -199,7 +197,7 @@ p {
   line-height: 1.71;
 }
 /* --------------------- Ocupation----------------*/
-.container.ocupation {
+.section.ocupation {
   padding-bottom: 94px;
 }
 .ocupation li {
@@ -208,11 +206,12 @@ p {
 /* -------------------------Team ------------------------*/
 .team.section {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 94px;
 }
 .team-card {
   background-color: var(--main-bg-color);
   display: inline-block;
-  margin-bottom: 94px;
+
 }
 .team .title {
   font-weight: 500;
@@ -232,8 +231,6 @@ p {
 /* -------------------------Footer ------------------------*/
 .footer {
   background-color: var(--dark-bg-color);
-}
-.container.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -256,7 +253,7 @@ p {
   color: var(--accent-color);
 }
 /* -------------------------Portfolio page ------------------------*/
-.container.portfolio {
+.section.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
