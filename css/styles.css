@@ -100,7 +100,6 @@ p {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo-color-1 {
   color: var(--accent-color);
@@ -242,6 +241,10 @@ p {
 }
 .team.list {
   display: flex;
+
+}
+.team-card img {
+  display: block;
 }
 .team-card {
   width: calc((100% - 90px) / 4);
@@ -253,6 +256,12 @@ p {
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
+.team-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .team .title {
   font-weight: 500;
   font-size: 16px;
@@ -260,15 +269,12 @@ p {
   text-align: center;
   color: var(--secondary-text-color);
 
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team .position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  margin-bottom: 30px;
 }
 /* -------------------------Footer ------------------------*/
 .footer {
@@ -281,6 +287,9 @@ p {
   font-style: normal;
 
   margin-top: 20px;
+}
+.address-item:not(:last-child) {
+margin-bottom: 9px;
 }
 .footer-address {
   line-height: 1.71;
@@ -297,14 +306,14 @@ p {
   color: var(--accent-color);
 }
 /* -------------------------Portfolio page ------------------------*/
-.list.button {
+.list.button-list {
   margin-bottom: 50px;
   text-align: center;
 }
-.button li {
+.button-list > li {
   display: inline-block;
 }
-.button li :not(last-child) {
+.button-item:not(last-child) {
   margin-right: 8px;
 }
 .portfolio-button {
